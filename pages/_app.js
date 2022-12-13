@@ -11,8 +11,8 @@ function MyApp({ Component, pageProps }) {
       <Layout>
         <Toaster />
         <Component {...pageProps} />
-      </Layout>
-    </StateContext>
+      </Layout> 
+     </StateContext> 
   )
 }
 
