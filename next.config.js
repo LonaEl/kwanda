@@ -4,8 +4,8 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/twitter',
-        destination: '/twitter.com/Agric_young/',
+        source: '/pay',
+        destination: '/payment',
         permanent: true,
       }
     ]

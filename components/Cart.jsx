@@ -78,7 +78,7 @@ const Cart = () => {
               <h3>R{totalPrice}</h3>
             </div>
             <div className="btn-container">
-             <Link href="/payment">
+             <Link href="/pay">
               <button type="button" className="btn" onClick={showCart}>
               Checkout
                </button>
