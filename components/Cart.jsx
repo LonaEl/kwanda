@@ -8,7 +8,7 @@ import { urlFor } from '../lib/client';
 
 const Cart = () => {
   const cartRef = useRef();
-  const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuantity, onRemove} = useStateContext();
+  const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuantity, onRemove, showCart} = useStateContext();
 
 
  
@@ -78,12 +78,12 @@ const Cart = () => {
               <h3>R{totalPrice}</h3>
             </div>
             <div className="btn-container">
-              <Link href="/payment">
-              <button type="button" className="btn">
+             <Link href="/payment">
+              <button type="button" className="btn" onClick={showCart}>
               Checkout
                </button>
               </Link>
-          
+              
             </div>
           </div>
         )}
