@@ -10,8 +10,8 @@ const Payment = () => {
   const [name, setName] = useState('');
   const [address, setAddress] = useState('');
   const [colour, setColour] = useState('');
-  const { setTotalPrice, cartItems} = useStateContext();
-  const [amount] = useState(setTotalPrice * 100);
+  const { totalPrice, cartItems} = useStateContext();
+  const amount = totalPrice ;
 
   const push = () => {
     router.push('/success')
